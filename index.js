@@ -84,33 +84,47 @@ async function loadMainPrompts() {
   // Call the appropriate function depending on what the user chose
   switch (choice) {
     case "VIEW_EMPLOYEES":
-      return viewEmployees();
+      viewEmployees()
+      break;
     case "VIEW_EMPLOYEES_BY_DEPARTMENT":
-      return viewEmployeesByDepartment();
+      viewEmployeesByDepartment()
+      break;
     case "VIEW_EMPLOYEES_BY_MANAGER":
-      return viewEmployeesByManager();
+      viewEmployeesByManager()
+      break;
     case "ADD_EMPLOYEE":
-      return addEmployee();
+      addEmployee()
+      break;
     case "REMOVE_EMPLOYEE":
-      return removeEmployee();
+      removeEmployee()
+      break;
     case "UPDATE_EMPLOYEE_ROLE":
-      return updateEmployeeRole();
+      updateEmployeeRole()
+      break;
     case "UPDATE_EMPLOYEE_MANAGER":
-      return updateEmployeeManager();
+      updateEmployeeManager()
+      break;
     case "VIEW_DEPARTMENTS":
-      return viewDepartments();
+      viewDepartments()
+      break;
     case "ADD_DEPARTMENT":
-      return addDepartment();
+      addDepartment()
+      break;
     case "REMOVE_DEPARTMENT":
-      return removeDepartment();
+      removeDepartment()
+      break;
     case "VIEW_ROLES":
-      return viewRoles();
+      viewRoles()
+      break;
     case "ADD_ROLE":
-      return addRole();
+      addRole()
+      break;
     case "REMOVE_ROLE":
-      return removeRole();
+      removeRole()
+      break;
     default:
-      return quit();
+      quit()
+      break;
   }
 }
 
